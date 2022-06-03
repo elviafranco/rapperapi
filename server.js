@@ -17,9 +17,13 @@ const rappers =  {
         'age': 29,
         'birthName': 'Dylan',
         'birthLocation': 'Dylan'
+    },
+    'unknown': {
+        'age': 0,
+        'birthName': 'Unknown',
+        'birthLocation': 'Unknown'
     }
 }
-
 
 app.get('/', (req, res) => {
 //   res.send('Hello World!')
@@ -34,7 +38,7 @@ app.get('/api/:rapperName', (req, res) => {
     if (rappers[rappersName]){
         res.json(rappers[rappersName])
     } else {
-        res.json(rappers['dylan'])
+        res.json(rappers['unknown'])
     }
     })
 
