@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
+// Requiring cors to access API locally
 const cors = require('cors')
 const port = 8000
 
+// Telling Express to use cors
 app.use(cors())
 
 const rappers =  {
