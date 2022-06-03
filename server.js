@@ -42,6 +42,6 @@ app.get('/api/:rapperName', (req, res) => {
     }
     })
 
-app.listen(process.env.port || port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening on port ${port}`)
 })
